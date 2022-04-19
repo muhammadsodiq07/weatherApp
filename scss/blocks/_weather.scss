@@ -1,0 +1,296 @@
+.iconsBox__iconSun {
+  width: 50px;
+  height: 50px;
+}
+
+h1, h3 {
+  font-weight: 400;
+}
+
+.weather {
+  min-height: 100vh;
+  background-image: url('../../images/sun1.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  position: relative;
+  transition: 500ms;
+  object-fit: cover;
+}
+
+
+.container {
+  position: absolute;
+  top: -80px;
+  left: -480px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 3em 4em 3em;
+}
+
+.weather__animation {
+  background-image: url('../../weather-animations/clouds.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  padding: 2em 1em;
+}
+
+
+
+.container > div {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.weather__temp {
+  margin: 0 1em;
+}
+
+
+.weather__name {
+  margin: 0 !important;
+  margin-bottom: 0.2em !important;
+  font-size: 3em;
+}
+
+.weather__temp {
+  font-size: 7em; 
+  margin: 0 0.2em!important;
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: rgba(110,110,110,0.25);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.18);
+  z-index: 1;
+  padding: 3em 2em;
+  overflow-Y: scroll;
+}
+
+.panel form {
+  margin-bottom: 3em;
+}
+
+.search-btn {
+  position: relative;
+  top: 4px;
+  right: 4px;
+  padding: 0.3em 0.6em;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: #fa6d1b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: 0.4s;
+
+  &:hover {
+    background: #fff !important;
+    color: #000;
+  }
+}
+
+.search {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px #ccc solid;
+  padding: 0 1em 0.5em 0;
+  width: 80%;
+  color: #fff;
+  font-size: 1.1em;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #ccc;
+  }
+}
+
+.panel ul {
+  padding: 0 0 1em 0;
+  margin: 2em 0;
+  border-bottom: 1px #ccc solid; 
+}
+
+.panel ul li{
+  color:#ccc;
+  margin: 2.5em 0;
+}
+
+.panel ul h4{
+  margin: 3em 0;
+}
+
+.country {
+  display: block;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.detailis li {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.weather__buttons {
+  position: relative;
+  top: 180px;
+  left: -75px;
+}
+
+.weather__btn {
+  background-color: transparent !important;
+  border: 1px solid #ccc;
+  padding: 0.4em 0.6em;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #fa6d1b !important;
+    color: #000;
+  }
+}
+
+
+
+
+
+.rain {
+  background-image: url('../../weather-animations/rain.gif');
+}
+.rainBody {
+  min-height: 100vh;
+  background-image: url('../../weather-animations/rain.gif');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  position: relative;
+  transition: 500ms;
+  object-fit: cover;
+}
+
+.snow {
+  background-image: url('../../weather-animations/snow.gif');
+}
+.snowBody {
+  min-height: 100vh;
+  background-image: url('../../weather-animations/snow.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  position: relative;
+  transition: 500ms;
+  object-fit: cover;
+  object-fit: cover;
+}
+
+.fog {
+  background-image: url('../../weather-animations/fog.gif');
+}
+.fogBody {
+  min-height: 100vh;
+  background-image: url('../../weather-animations/fog.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  position: relative;
+  transition: 500ms;
+  object-fit: cover;
+}
+
+.sunny {
+  background-image: url('../../weather-animations/clear.gif');
+}
+.sunnybody {
+  min-height: 100vh;
+  background-image: url('../../weather-animations/clear.gif');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  position: relative;
+  transition: 500ms;
+  object-fit: cover;
+}
+
+
+.thund {
+  background-image: url('../../weather-animations/thunderstorm.gif');
+}
+.thundbody {
+  min-height: 100vh;
+  background-image: url('../../weather-animations/thunderstorm.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  position: relative;
+  transition: 500ms;
+  object-fit: cover;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  .container {
+    position: relative;
+    width: 100%;
+    top: -600px;
+    left: 0 !important;
+  }
+  .panel {
+    position: relative;
+    width: 100%;
+    top: -600px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .weather {
+    min-height: 40em;
+  }
+}
