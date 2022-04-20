@@ -138,8 +138,8 @@ h1, h3 {
   background: rgba(110, 110, 110, 0.25);
   -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 1;
   padding: 3em 2em;
@@ -241,7 +241,7 @@ h1, h3 {
 .weather__buttons {
   position: relative;
   top: 180px;
-  left: -75px;
+  left: 0px;
 }
 
 .weather__btn {
@@ -349,6 +349,20 @@ h1, h3 {
   -o-object-fit: cover;
      object-fit: cover;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    position: relative;
+    width: 100%;
+    top: -600px;
+    left: 0 !important;
+  }
+  .panel {
+    position: relative;
+    width: 100%;
+    top: -600px;
+  }
 }
 
 @media screen and (max-width: 800px) {
