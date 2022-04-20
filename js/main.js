@@ -15,6 +15,7 @@ form.addEventListener('submit', (e) => {
   country = search.value;
   getDateWeather(country);
   
+  search.innerHTML = ""
 })
 
 getDateWeather(country);
